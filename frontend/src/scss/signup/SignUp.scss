@@ -1,0 +1,224 @@
+
+/* =======회원가입 css=============================================== */
+.signup-text{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.signup-form{
+  margin-bottom: 80px;
+  
+  td{
+    padding: 10px;
+  }
+  
+  td:not(.signup-td){
+    border-bottom: 1px solid rgb(0 0 0 / 17%);
+  }
+
+  .signup-table {
+      margin: 10px auto;
+      height: 750px;
+      width: 590px;
+      border: 1px solid #D6D6D6;
+  }
+  .signup-td {
+    border-bottom: none;
+  }
+  .category-name{
+    text-align: center;
+    border-right: 1px solid #D6D6D6;
+    padding: 10px;
+    background-color: #FFF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 110px;
+  }
+  
+  .category-box{
+    margin-left: 5px;
+    width: 260px;
+    height: 30px; 
+    border: 1px solid #D6D6D6; 
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+
+  button {
+      padding: 10px 15px;
+      border: none ;
+      background-color: #546D01;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-left: 5px;
+      position: relative;
+      bottom: 2px;
+      cursor: pointer;
+      
+      &:hover {
+          background-color: darken(#546D01, 5%);
+      }
+  }
+
+  button[type="submit"] {
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: #A4CC22;
+    font-size: 16px;
+
+    &:hover {
+      background-color: darken(#A4CC22, 5%);
+  }
+  }
+  
+  /* ======= 성별 css ===============================================*/
+  .gender-group [type="radio"] {
+    display: none;
+    
+  }
+
+  .gender-group {
+    display: flex;
+  }
+
+  .gender-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    
+    cursor: pointer;
+  }
+
+  .gender-button.selected {
+    background-color: #546D01;
+    border: none;
+    color: #FFF;
+  }
+
+  .category-address {
+    margin-left: 5px;
+    width: 200px;
+    height: 23px;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px; 
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+
+  .category-address2 {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 380px;
+    height: 23px;
+    border: 1px solid #D6D6D6; 
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  /* ======= 생년월일 css ===============================================*/
+  .age-box {
+    width: 260px;
+    height: 30px;
+    margin: 5px 10px 5px 5px;
+    padding-left: 5px;
+    border: 1px solid #D6D6D6; 
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  /* ======= 핸드폰번호 css ===============================================*/
+  .number-input{
+    width: 260px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    border: 1px solid #D6D6D6; 
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+
+  /* ======= 이메일 css ===============================================*/
+  .email-box{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    width: 260px;
+    height: 30px;
+    border: 1px solid #D6D6D6; 
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  // /* ======= 비밀번호 보기 버튼 css ====================================================== */
+  .PwShowBtn{
+    padding: 10px 15px;
+    border: none ;
+    background-color: #546D01;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: darken(#546D01, 5%);
+    }
+  }
+
+  /* ======= 유효성 검사 문구 css ===============================================*/
+  .error{
+    margin-left: 10px;
+    font-size: 14px;
+    color: red;
+  }
+  
+  .success{
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgb(56, 206, 26);
+  }
+
+  .signup-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+  /* ======= 모달창 ===============================================*/
+.address-modal{
+  background-color: rgba(0,0,0,0.5);
+  margin: 0 auto;
+  width: 700px;
+  height: 700px;
+  padding: 150px 700px 700px 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .modal-close{
+    margin: 10px auto;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    
+    &:hover{
+      cursor : pointer;
+    }
+  }
+}

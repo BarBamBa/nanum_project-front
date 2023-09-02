@@ -1,0 +1,125 @@
+.pageTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  font-size: 32px;
+  border-bottom: 2px solid #D6D6D6;
+  padding: 15px 0px;
+
+  span {
+    padding-left: 50px;
+  }
+}  
+.mypage-form {
+  min-height: 100vh;
+
+  .myPage-Container {
+    width: 700px;
+    height: 550px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(7, 50px);
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
+
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+
+/* =====카테고리 이름 및 텍스트박스 css ====================================== */
+    .myPage-textBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #D6D6D6;
+      border-radius: 5px;
+      height: 40px;
+      width: 400px;
+      white-space: pre-wrap;
+      overflow: hidden;
+
+    }
+
+    .buttonBox {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 150px;
+
+      .myPage-password-btn {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: #546d01;
+        color: white;
+        height: 40px;
+
+        &:hover {
+          background-color: darken(#546d01, 5%);
+        }
+      }
+
+      .MyVolunteerBox{
+        width: 450px;
+      }
+
+      .myPage-btn-div{
+        margin-left: 25px;
+      }
+
+      .myPage-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #A4CC22;
+        border: 1px solid #A4CC22;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        margin-left: 5px;
+
+        &:hover {
+          background-color: darken(#A4CC22, 5%);
+        }
+      }
+    }
+  }
+}
+
+// 이메일 인증 버튼
+.emailAuth{
+  padding: 5px;
+  position: relative;
+  left: 40px;
+  font-size: 15px;
+  background-color: #A4CC22;
+  border: 3px solid #A4CC22;
+  border-radius: 5px;
+  color: white;
+}
+
+.emailAuth2{
+  padding: 5px;
+  position: relative;
+  left: 40px;
+  font-size: 15px;
+  background-color: #afd436;
+  border: 3px solid #A4CC22;
+  border-radius: 5px;
+  color: white;
+}
+
+.emailAuth:hover{
+  background-color: #FFF;
+  color: #A4CC22;
+  border: 3px solid #A4CC22;
+}

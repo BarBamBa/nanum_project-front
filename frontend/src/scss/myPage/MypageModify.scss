@@ -1,0 +1,119 @@
+.modify-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modify-Container {
+    width: 700px;
+    height: 650px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(6, 100px);
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+
+    button {
+      grid-column-start: 3;
+    }
+
+    .modify-category {
+      text-align: center;
+      grid-column-start: 1;
+    }
+
+    input[type="text"] {
+      grid-area: textInput;
+      border: 1px solid #D6D6D6;
+      border-radius: 5px;
+      height: 30px;
+      width: 380px;
+      text-align: center;
+    }
+
+    .modify-textBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #D6D6D6;
+      border-radius: 5px;
+      height: 40px;
+      width: 400px;
+      white-space: pre-wrap;
+      overflow: hidden;
+    }
+
+    
+    .modify-textCheck {
+
+    }
+
+    .message {
+      grid-column-start: 2;
+
+      /* 에러 메시지 */
+      &.modifySuccess{
+        display: flex;
+        justify-content: center;
+        color: #546d01;
+      }
+  
+      &.modifyError{
+        display: flex;
+        justify-content: center;
+        color: red;
+      }
+    }
+
+    .invalid-message {
+      display: flex;
+      justify-content: center;
+      color: red;
+    }
+
+    .modifyCheck-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #546d01;
+      border: 1px solid #546d01;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 20px;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+      margin-left: 5px;
+
+      &:hover {
+        background-color: darken(#546d01, 5%);
+      }
+    }
+
+    .modifyBtns{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 6;
+
+      .modify-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #A4CC22;
+        border: 1px solid #A4CC22;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        margin-left: 5px;
+  
+        &:hover {
+          background-color: darken(#A4CC22, 5%);
+        }
+      }
+    }  
+  }
+}

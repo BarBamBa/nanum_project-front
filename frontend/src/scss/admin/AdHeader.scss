@@ -1,0 +1,19 @@
+.admin-nav-list {
+    display: flex;
+    justify-content: center;
+}
+.admin-nav-item {
+    cursor: pointer;
+    margin: 0 16px;
+}
+.admin-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-logout-btn {
+    position: relative;
+    right: -500px;
+    cursor: pointer;
+}

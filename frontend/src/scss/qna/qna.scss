@@ -1,0 +1,247 @@
+.qnaContainer {
+  width: 1440px;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+
+.qna-nav {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #546D01;
+}
+
+.qna-notice {
+    border: 1px solid #A4CC22;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 16px;
+}
+
+.qna-notice li {
+    list-style-type: square;
+    margin-bottom: 20px;
+}
+
+.qna-tab {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.qna-tab button {
+    margin: 10px;
+    border: none;
+    background-color: white;
+    color: #e6e6e6;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.qna-head {
+    text-align: center;
+    border-top: 2px solid #546d01;
+    border-bottom: 2px solid #546d01;
+    padding: 16px;
+}
+
+.qna-table td {
+    border-top: 1px solid #ccc;
+    padding: 16px;
+}
+
+.qna-detail-container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.qna-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qna-writter-info {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+
+    p, span {
+        margin: 0 10px;
+    }
+}
+
+.qna-detail-content {
+    min-height: 800px;
+    border: 1px solid #ccc;
+}
+
+.qna-detail-qnatab-content {
+    min-height: 400px;
+    border-top: 1px solid #ccc;
+    padding: 16px;
+}
+
+.qna-detail-qnatab-response {
+    min-height: 400px;
+    padding: 30px;
+
+    .response-btn-box {
+        display: flex;
+        justify-content: flex-end;
+        width: 1250px;
+        margin: 0 auto;
+
+        button {
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #546D01;
+            color: white;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+        
+            &:hover {
+              background-color: darken(#546D01, 5%);
+              color: white;
+            }
+          }
+    }
+}
+
+.qna-detail-qnatab-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px auto;
+  
+    button {
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #A4CC22;
+      color: white;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  
+      &:hover {
+        background-color: darken(#A4CC22, 5%);
+        color: white;
+      }
+    }
+  }
+
+.qna-detail-qnatab-response {
+    .rdw-editor-toolbar {
+        display: none;
+    }
+}
+
+.qna-detail-container {
+
+  .qna-detail-kind {
+    border-bottom: 3px solid #546d01;
+
+    h1 {
+      padding-left: 30px;
+    }
+  }
+
+  .DraftEditor-root {
+      border: 1px solid #ccc !important;
+      border-radius: 5px;
+      height: 250px;
+      width: 1250px;
+      margin: 0 auto;
+  }
+
+  .rdw-editor-wrapper {
+    height: 300px !important;
+ }
+}
+
+.qna-write-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      background-color: #546d01;
+      color: white;
+    }
+}
+
+.qna-table {
+    border-collapse: collapse;
+    width: 100%;
+    td {
+      border-top: 1px solid #ccc;
+      padding: 16px;
+    }
+    .table-head {
+      text-align: center;
+      border-top: 2px solid #546d01;
+      border-bottom: 2px solid #546d01;
+      padding: 16px;
+    }
+    .table-no{
+      width: 10%;
+      text-align: center;
+    } 
+    
+    .table-title {
+      width: 70%;
+      cursor: pointer;
+  
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  
+    .table-date {
+      width: 20%;
+      text-align: center;
+    }
+  }
+
+.qna-detail-box {
+    width: 1000px;
+    margin: 20px auto;
+    border: 1px solid #D6d6d6;
+    border-radius: 5px;
+    padding: 20px;
+
+
+    .qna-detail-header {
+    margin: 0 auto;
+    }
+    .qna-title {
+      display: flex;
+    }
+
+    .qna-detail-info {
+      display: flex;
+      justify-content: space-between;
+
+      .qna-writter-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: auto;
+        min-width: 300px;
+        p {
+          display: flex;
+          align-items: center;
+
+        }
+      }
+    }
+}
