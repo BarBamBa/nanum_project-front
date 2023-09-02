@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { CustomOverlayMap, Map, MapMarker } from 'react-kakao-maps-sdk';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from 'react-icons/io';
-import { TfiClose } from 'react-icons/Tfi';
+import { TfiClose } from 'react-icons/tfi';
 import '../scss/Map.scss';
 
 function MapBox({ data }) {
